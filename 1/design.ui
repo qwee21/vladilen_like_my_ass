@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>725</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>725</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>725</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Lab10_1</string>
+  </property>
+  <widget class="QLabel" name="labelBrand">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Марка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDriveType">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Тип привода</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMileage">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Пробег (км)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelBrand_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Цвет</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="boxColor">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="boxBrand">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="boxDriveType">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>100</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxMileage">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>330</y>
+     <width>151</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelNewCost">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>181</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Цена нового автомобиля (₽)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxNewCost">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>9999999999999.990234375000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelNowCost">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>179</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Цена на данный момент ($)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxNowCost">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>190</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>9999999999999.990234375000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGPS">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>GPS X Y (км)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSX">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>220</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-9999999999999.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>9999999999.989999771118164</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSY">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>260</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-9999999999999.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>9999999999.989999771118164</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMaxSpeed">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>179</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Макс. скорость (км/ч)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxMaxSpeed">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>300</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>9999999.990000000223517</double>
+   </property>
+   <property name="value">
+    <double>220.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelEngineType">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>179</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Тип двигателя</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="boxEngineType">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>130</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelRemaningFuel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Топлива осталось</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxRemaningFuel">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>360</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelFuelConsumption">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>151</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Расход топлива на км</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxFuelConsumption">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>390</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>0.100000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+   <property name="value">
+    <double>0.200000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelServiceInterval">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>181</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сервисный интервал (дней)</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="boxServiceInterval">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>420</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>99999999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Характеристики автомобиля:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGoToCity">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>311</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Проверка доедет ли автомобиль до города:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSXGoToCity">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>460</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>99999999999.990005493164063</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSYGoToCity">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>500</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>99999999999.990005493164063</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGPSGoToCity">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>480</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>gps X Y (км)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonGoToCity">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>470</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Проверить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>450</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Методы:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDistanceToPoint">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>550</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>14</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>Расстояние до точки:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSXDistanceToPoint">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>530</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSYDistanceToPoint">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>570</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGPSDistanceToPoint">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>550</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>gps X Y (км)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonDistanceToPoint">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>540</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Вычислить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>630</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>14</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>Цена поездки до точки:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSXCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>610</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSYCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>650</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999999999.990000009536743</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGPSCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>630</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>gps X Y (км)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>620</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Вычислить</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxFuelCostCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>630</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>99999999999.990005493164063</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelFuelCostCostOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>630</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Цена топлива(₽)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTimeOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>690</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>14</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>Вычислить время до точки при максимальной скорости</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSXTimeOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>680</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>9999999999.989999771118164</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGPSTimeOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>690</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>gps X Y (км)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonTimeOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>690</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Вычислить</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="boxGPSYTimeOfTrip">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>720</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>9999999999.989999771118164</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPriceLoss">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>760</y>
+     <width>371</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Rockwell</family>
+     <pointsize>14</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="text">
+    <string>Сколько автомобиль потерял в цене после покупки?</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonPriceLoss">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>760</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Вычислить</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
